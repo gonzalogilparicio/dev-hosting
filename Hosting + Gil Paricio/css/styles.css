@@ -736,6 +736,16 @@ footer {
     padding: 30px;
     font-size: 2rem;
   }
+
+
+  /* ----------------------------- seguridad web ----------------------------- */
+
+
+  .main__section__seguridadweb__text p {
+    padding: 50px;
+  }
+
+
 }
 
 @media (max-width: 992px) {
@@ -776,8 +786,8 @@ footer {
 
   /* ----------------------------- dominios ----------------------------- */
 
-  
-  .main__section__dominios h2 {    
+
+  .main__section__dominios h2 {
     padding: 30px 20px;
   }
 }
@@ -881,20 +891,40 @@ footer {
   /* ----------------------------- dominios ----------------------------- */
 
 
-    
+
   .main__section__dominios h1 {
-    font-size: 2rem;    
+    font-size: 2rem;
     padding-top: 50px;
   }
-  
+
   .main__section__dominios h2 {
     font-size: 1rem;
     padding: 10px 20px 15px 20px;
   }
 
-  .main__section__dominios__search input[type=text] {    
-    font-size: 14px;    
-    width: auto;        
+  .main__section__dominios__search input[type=text] {
+    font-size: 14px;
+    width: auto;
+  }
+
+
+  /* ----------------------------- seguridad web ----------------------------- */
+
+
+
+  .main__section__seguridadweb__text h1 {
+    font-size: 1.5rem;
+    padding: 30px 20px;
+  }
+
+  .main__section__seguridadweb__text p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+
+  .main__section__seguridadweb__img {
+    padding: 10px 20px 10px 20px;
+    width: 100%;
   }
 
 
