@@ -772,6 +772,14 @@ footer {
     max-width: 350px;
     padding-bottom: 40px;
   }
+
+
+  /* ----------------------------- dominios ----------------------------- */
+
+  
+  .main__section__dominios h2 {    
+    padding: 30px 20px;
+  }
 }
 
 
@@ -867,6 +875,26 @@ footer {
   .main__section__hosting__cards {
     max-width: 280px;
     padding-inline: 20px;
+  }
+
+
+  /* ----------------------------- dominios ----------------------------- */
+
+
+    
+  .main__section__dominios h1 {
+    font-size: 2rem;    
+    padding-top: 50px;
+  }
+  
+  .main__section__dominios h2 {
+    font-size: 1rem;
+    padding: 10px 20px 15px 20px;
+  }
+
+  .main__section__dominios__search input[type=text] {    
+    font-size: 14px;    
+    width: auto;        
   }
 
 
