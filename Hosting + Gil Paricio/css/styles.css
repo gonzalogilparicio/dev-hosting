@@ -648,6 +648,22 @@ footer {
   }
 
 
+  /* ----------------------------- contacto ----------------------------- */
+
+
+
+  .main__section__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__section__contact__cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 30px;
+  }
+
+
+
   /* ----------------------------- proximamente ----------------------------- */
 
 
@@ -796,6 +812,22 @@ footer {
 @media (max-width: 803px) {
 
 
+  /* ----------------------------- contacto ----------------------------- */
+
+  .main__section__contact {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+  .main__section__contact__cards {
+    grid-template-columns: 1fr;
+    padding-inline: 30px;
+  }
+
+
 
   /* ----------------------------- proximamente ----------------------------- */
 
@@ -925,6 +957,56 @@ footer {
   .main__section__seguridadweb__img {
     padding: 10px 20px 10px 20px;
     width: 100%;
+  }
+
+
+  /* ----------------------------- contacto ----------------------------- */
+
+  .main__section__contact {
+    background-image: url(../assets/images/backgroundcontacto.jpg) center center cover no-repeat fixed;
+  }
+
+  .main__section__contact__text {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 2px #0b0b0b;
+  }
+
+  .main__section__contact__text h1 {
+    font-size: 2.2rem;
+    padding: 40px 0 20px 0;
+  }
+
+  .main__section__contact__text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-inline: 10px;
+    margin-bottom: 30px;
+  }
+
+  .main__section__contact__card {
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 220px;
+  }
+
+  .main__section__contact__card a {
+    font-size: 13px;
+  }
+
+  .main__section__contact__cards h3 {
+    font-size: 18px;
+  }
+
+  .main__section__contact__cards p {
+    font-size: 14px;
+  }
+
+  .main__section__contact__card button {
+    margin: 10px 0;
+    padding: 0px 20px 5px 20px;
+    font-size: 14px;
   }
 
 
