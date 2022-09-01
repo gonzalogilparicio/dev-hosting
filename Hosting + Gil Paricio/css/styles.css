@@ -479,10 +479,12 @@ header {
   cursor: pointer;
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
+  transition: all 1s;
 }
 
 .proximamente button:hover {
   background-color: rgb(229, 126, 0);
+  transform: scale(1.2);
 }
 
 .proximamente button a {
