@@ -1,0 +1,448 @@
+/* ----------------------------- responsive ----------------------------- */
+
+
+@media (max-width: 1179px) {
+
+
+    /* ----------------------------- logo + navbar ----------------------------- */
+  
+  
+    .discount__bar {
+      display: none;
+    }
+  
+  
+    /* ----------------------------- index ----------------------------- */
+  
+  
+    .main__section__index {
+      display: flex;
+      flex-direction: column;
+      background-color: #031D5B;
+      height: auto;
+      letter-spacing: 0.2;
+    }
+  
+    .main__section__index__col1 {
+      width: auto;
+      text-align: center;
+      color: #d1d1d1;
+      margin-top: 30px;
+    }
+  
+    .main__section__index__col1 h1 {
+      font-size: 45px;
+      padding-left: 30px;
+    }
+  
+    .main__section__index__col1 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 0 0 30px;
+    }
+  
+    .main__section__index__col1 p {
+      padding: 20px 0 0 30px;
+    }
+  
+    .main__section__index__col2 img {
+      width: 450px;
+      margin: 0 0 30px 0;
+    }
+  
+  
+    /* ----------------------------- contacto ----------------------------- */
+  
+  
+  
+    .main__section__contact {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main__section__contact__cards {
+      grid-template-columns: repeat(2, 1fr);
+      padding-inline: 30px;
+    }
+  
+  
+  
+    /* ----------------------------- proximamente ----------------------------- */
+  
+  
+  
+    .proximamente {
+      min-width: auto;
+      padding: 20px;
+    }
+  
+    .proximamente h1 {
+      font-size: 8vw;
+      margin: 20px 0;
+    }
+  
+    .proximamente h2 {
+      font-size: 4vw;
+      margin: 30px 0;
+    }
+  
+    .proximamente p {
+      font-size: 2vw;
+      margin: 40px 0;
+    }
+  
+    .proximamente button {
+      font-size: 2vw;
+    }
+  
+  
+    /* ----------------------------- footer ----------------------------- */
+  
+  
+    .footer__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+  
+    .footer__container__box {
+      padding: 0;
+      margin-inline: 100px;
+      display: flex;
+      margin-bottom: 30px;
+    }
+  
+    .footer__container__box ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
+  @media (max-width: 1096px) {
+  
+  
+    /* ----------------------------- logo + navbar ----------------------------- */
+  
+  
+    .collapse ul li {
+      font-size: 14px;
+    }
+  
+    .collapse .btn {
+      margin-inline: 10px;
+      font-weight: 600;
+      padding-inline: 10px;
+      font-size: 14px;
+    }
+  
+  
+    /* ----------------------------- hosting ----------------------------- */
+  
+  
+    .main__section__hosting__cards {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 800px;
+      padding-bottom: 40px;
+    }
+  
+    .card {
+      margin: 0;
+    }
+  
+    .main__section__hosting__h1 {
+      padding: 30px;
+      font-size: 2rem;
+    }
+  
+  
+    /* ----------------------------- seguridad web ----------------------------- */
+  
+  
+    .main__section__seguridadweb__text p {
+      padding: 50px;
+    }
+  
+  
+  }
+  
+  @media (max-width: 992px) {
+  
+  
+    /* ----------------------------- logo + navbar ----------------------------- */
+  
+  
+    .collapse ul li {
+      font-size: 16px;
+    }
+  
+    .collapse .btn {
+      font-weight: 600;
+      margin: 8px 0 8px 0;
+      font-size: 15px;
+    }
+  
+  
+    /* ----------------------------- index ----------------------------- */
+  
+  
+    .main__section__index__col2 img {
+      width: 450px;
+      margin: 0 0 30px 0;
+    }
+  
+  
+    /* ----------------------------- hosting ----------------------------- */
+  
+  
+    .main__section__hosting__cards {
+      grid-template-columns: 1fr;
+      max-width: 350px;
+      padding-bottom: 40px;
+    }
+  
+  
+    /* ----------------------------- dominios ----------------------------- */
+  
+  
+    .main__section__dominios h2 {
+      padding: 30px 20px;
+    }
+  }
+  
+  
+  @media (max-width: 803px) {
+  
+  
+    /* ----------------------------- contacto ----------------------------- */
+  
+    .main__section__contact {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  
+  
+    .main__section__contact__cards {
+      grid-template-columns: 1fr;
+      padding-inline: 30px;
+    }
+  
+  
+  
+    /* ----------------------------- proximamente ----------------------------- */
+  
+  
+  
+    .proximamente h2 {
+      font-size: 5vw;
+      margin: 30px 0;
+    }
+  
+    .proximamente p {
+      font-size: 3.5vw;
+      margin: 40px 0;
+    }
+  
+  
+    /* ----------------------------- footer ----------------------------- */
+  
+    .footer__container__box {
+      display: flex;
+      padding: 0;
+      margin-inline: 100px;
+      align-items: center;
+    }
+  
+    .footer__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+  
+  }
+  
+  
+  @media (max-width: 576px) {
+  
+  
+    /* ----------------------------- logo + navbar ----------------------------- */
+  
+  
+    .navbar-brand img {
+      width: 160px;
+      height: 48px;
+    }
+  
+  
+    /* ----------------------------- index ----------------------------- */
+  
+  
+    .main__section__index {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .main__section__index__col1 {
+      width: auto;
+      text-align: center;
+      color: #d1d1d1;
+      margin-top: 30px;
+    }
+  
+    .main__section__index__col1 h1 {
+      font-size: 30px;
+      padding-inline: 20px;
+    }
+  
+    .main__section__index__col1 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      padding-inline: 20px;
+    }
+  
+    .main__section__index__col1 p {
+      padding-inline: 20px;
+    }
+  
+    .main__section__index__col2 img {
+      width: 100%;
+      margin: 0 0 30px 0;
+      padding-inline: 20px;
+    }
+  
+  
+    /* ----------------------------- hosting ----------------------------- */
+  
+  
+    .main__section__hosting__cards {
+      max-width: 280px;
+      padding-inline: 20px;
+    }
+  
+  
+    /* ----------------------------- dominios ----------------------------- */
+  
+  
+  
+    .main__section__dominios h1 {
+      font-size: 2rem;
+      padding-top: 50px;
+    }
+  
+    .main__section__dominios h2 {
+      font-size: 1rem;
+      padding: 10px 20px 15px 20px;
+    }
+  
+    .main__section__dominios__search input[type=text] {
+      font-size: 14px;
+      width: auto;
+    }
+  
+  
+    /* ----------------------------- seguridad web ----------------------------- */
+  
+  
+  
+    .main__section__seguridadweb__text h1 {
+      font-size: 1.5rem;
+      padding: 30px 20px;
+    }
+  
+    .main__section__seguridadweb__text p {
+      font-size: 0.9rem;
+      padding: 0 15px;
+    }
+  
+    .main__section__seguridadweb__img {
+      padding: 10px 20px 10px 20px;
+      width: 100%;
+    }
+  
+  
+    /* ----------------------------- contacto ----------------------------- */
+  
+    .main__section__contact {
+      background-image: url(../assets/images/backgroundcontacto.jpg) center center cover no-repeat fixed;
+    }
+  
+    .main__section__contact__text {
+      text-align: center;
+      color: white;
+      text-shadow: 5px 5px 2px #0b0b0b;
+    }
+  
+    .main__section__contact__text h1 {
+      font-size: 2.2rem;
+      padding: 40px 0 20px 0;
+    }
+  
+    .main__section__contact__text h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding-inline: 10px;
+      margin-bottom: 30px;
+    }
+  
+    .main__section__contact__card {
+      padding: 10px;
+      margin: 0;
+      margin-bottom: 20px;
+      max-width: 220px;
+    }
+  
+    .main__section__contact__card a {
+      font-size: 13px;
+    }
+  
+    .main__section__contact__cards h3 {
+      font-size: 18px;
+    }
+  
+    .main__section__contact__cards p {
+      font-size: 14px;
+    }
+  
+    .main__section__contact__card button {
+      margin: 10px 0;
+      padding: 0px 20px 5px 20px;
+      font-size: 14px;
+    }
+  
+  
+    /* ----------------------------- proximamente ----------------------------- */
+  
+  
+    .proximamente h1 {
+      font-size: 12vw;
+      margin: 80px 0 20px 0;
+    }
+  
+    .proximamente h2 {
+      font-size: 7vw;
+      margin: 30px 0;
+    }
+  
+    .proximamente p {
+      font-size: 4vw;
+      margin: 40px 0;
+    }
+  
+    .proximamente button {
+      font-size: 3.5vw;
+    }
+  
+  
+  
+    /* ----------------------------- footer ----------------------------- */
+  
+  
+    .footer__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+  }

@@ -1,0 +1,62 @@
+/* ----------------------------- dominios ----------------------------- */
+
+
+
+
+.main__section__dominios {
+    background-image: url(../assets/images/backgrounddominios.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+  }
+  
+  .main__section__dominios h1 {
+    font-size: 3rem;
+    color: white;
+    padding-top: 70px;
+  }
+  
+  .main__section__dominios h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .main__section__dominios__search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+  
+  .main__section__dominios__search button {
+    width: 20%;
+    background: #ff8c00;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .main__section__dominios__search button:hover {
+    background-color: rgb(229, 126, 0);
+  }
+  
+  .main__section__dominios__search button .bx {
+    color: black;
+    font-size: 26px;
+    padding-top: 8px;
+  }
+  
+  .main__section__dominios__search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }

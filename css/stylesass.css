@@ -1,0 +1,684 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
+/* ----------------------------- reset ----------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif; }
+
+/* ----------------------------- ttf de pestaña proximamente ----------------------------- */
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../assets/ttf/quicksand.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* ----------------------------- barra de descuento ----------------------------- */
+.discount__bar {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 8px 0 10px 0;
+  background-color: #FFD000;
+  align-items: center; }
+  .discount__bar a {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: black; }
+    .discount__bar a:hover {
+      text-decoration: underline;
+      color: black; }
+  .discount__bar img {
+    width: 150px;
+    height: 30px; }
+
+/* ----------------------------- logo + navbar ----------------------------- */
+#navbarSupportedContent {
+  flex-grow: 0; }
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 1; }
+
+.navbar-brand img {
+  cursor: pointer;
+  width: 230px;
+  height: 65px;
+  margin-top: 5px; }
+
+.nav-link {
+  color: #000000; }
+
+.collapse a {
+  color: black; }
+  .collapse a:hover, .collapse a.active {
+    color: #000000;
+    text-decoration: underline; }
+
+.collapse .btn {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  gap: 1rem;
+  margin-inline: 10px;
+  font-weight: 600;
+  padding-inline: 20px; }
+  .collapse .btn:hover {
+    background-color: #ff8c00;
+    color: black; }
+
+/* ----------------------------- index ----------------------------- */
+.main__section__index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #031D5B;
+  height: 500px;
+  padding: 0 70px;
+  letter-spacing: 0.2; }
+  .main__section__index__col1 {
+    width: 550px;
+    color: #d1d1d1;
+    margin-bottom: 0px; }
+    .main__section__index__col1 h1 {
+      font-size: 45px;
+      padding-left: 30px; }
+    .main__section__index__col1 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 0 0 30px; }
+    .main__section__index__col1 p {
+      padding: 20px 0 0 30px; }
+  .main__section__index__col2 img {
+    width: 450px;
+    margin-right: 30px; }
+
+/* ----------------------------- hosting ----------------------------- */
+.main__section__hosting {
+  background-image: url(../assets/images/hostingsectionbackground.png);
+  background-size: contain; }
+
+.main__section__hosting__h1 {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3rem; }
+
+.main__section__hosting__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0px auto;
+  text-align: center; }
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #828282, 0 6px 20px 0 rgba(151, 151, 151, 0.948);
+  margin: 50px 0; }
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px; }
+
+.card p {
+  font-size: 1rem; }
+
+.main__section__hosting__cards li .bx {
+  color: #31c300; }
+
+.main__section__hosting__cards li {
+  text-align: left;
+  line-height: 20px;
+  font-size: 0.8rem; }
+
+.main__section__hosting__cards ul {
+  margin-bottom: 25px; }
+
+.card__value--lightblue {
+  background-color: #54A5FF;
+  border-radius: 10px;
+  width: 160px;
+  margin: 0 auto 20px auto; }
+
+.card__value--orange {
+  background-color: #FF6600;
+  border-radius: 10px;
+  width: 160px;
+  margin: 0 auto 20px auto; }
+
+.card__value--lightgreen {
+  background-color: #00f700;
+  border-radius: 10px;
+  width: 180px;
+  margin: 0 auto 20px auto; }
+
+.card__value__integer__number {
+  font-size: 35px;
+  font-weight: 500; }
+
+.card__value__period {
+  font-size: 12px;
+  margin-left: -25px; }
+
+.card__value__decimal__number {
+  line-height: 1.8;
+  display: inline-block;
+  margin: 4px 0 0 2px;
+  vertical-align: top;
+  font-size: 18px; }
+
+.card__value__currency__symbol {
+  font-size: 36px; }
+
+.card button {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin-block: 10px; }
+
+.main__section__hosting__cards button:hover {
+  background-color: darkorange;
+  color: black; }
+
+/* ----------------------------- dominios ----------------------------- */
+.main__section__dominios {
+  background-image: url(../assets/images/backgrounddominios.jpg);
+  text-align: center;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat; }
+
+.main__section__dominios h1 {
+  font-size: 3rem;
+  color: white;
+  padding-top: 70px; }
+
+.main__section__dominios h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  padding: 30px 0; }
+
+.main__section__dominios__search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding-left: 15px; }
+
+.main__section__dominios__search button {
+  width: 20%;
+  background: #ff8c00;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; }
+
+.main__section__dominios__search button:hover {
+  background-color: #e57e00; }
+
+.main__section__dominios__search button .bx {
+  color: black;
+  font-size: 26px;
+  padding-top: 8px; }
+
+.main__section__dominios__search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0; }
+
+/* ----------------------------- seguridad web ----------------------------- */
+.main__section__seguridadweb {
+  background-color: #2FC99F; }
+
+.main__section__seguridadweb__text h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px 40px 0px 40px; }
+
+.main__section__seguridadweb__text p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 30px 200px 20px 200px; }
+
+.main__section__seguridadweb__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; }
+
+/* ----------------------------- contacto ----------------------------- */
+.main__section__contact {
+  background-image: url(../assets/images/backgroundcontacto.jpg);
+  background-size: contain; }
+
+.main__section__contact__text {
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 2px #0b0b0b; }
+
+.main__section__contact__text h1 {
+  font-size: 4.5rem;
+  padding: 40px 0 20px 0; }
+
+.main__section__contact__text h3 {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.main__section__contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0px auto;
+  text-align: center; }
+
+.main__section__contact__cards i {
+  font-size: 50px;
+  color: #7590ff;
+  margin-bottom: 15px; }
+
+.main__section__contact__card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #828282, 0 6px 20px 0 rgba(151, 151, 151, 0.948);
+  margin: 50px 0;
+  border: 1px solid black;
+  width: 300px;
+  background-color: #ebebeb; }
+
+.main__section__contact__cards h3 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 15px; }
+
+.main__section__contact__cards p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 15px;
+  line-height: 25px; }
+
+.main__section__contact__card button {
+  background: #ff8c00;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 5px 20px 5px 20px; }
+
+.main__section__contact__card button:hover {
+  background-color: #e57e00; }
+
+/* ----------------------------- proximamente ----------------------------- */
+.proximamente {
+  background-image: url(/assets/images/backgroundproximamente3.gif);
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  text-align: center;
+  padding: 100px; }
+
+.proximamente h1 {
+  color: white;
+  font-family: quicksand;
+  font-size: 7rem;
+  margin: 10px 0; }
+
+.proximamente h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 20px 0; }
+
+.proximamente p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 25px 0; }
+
+.proximamente button {
+  background: #ff8c00;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  transition: all 1s; }
+
+.proximamente button:hover {
+  background-color: #e57e00;
+  transform: scale(1.2); }
+
+.proximamente button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600; }
+
+/* ----------------------------- footer ----------------------------- */
+.footer {
+  width: 100%;
+  padding: 10px 0 0;
+  background-color: #333333; }
+  .footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin-inline: 10px;
+    margin-top: 10px; }
+    .footer__container__box {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px 40px 40px;
+      line-height: 25px; }
+      .footer__container__box__logo img {
+        width: 230px;
+        height: 65px; }
+      .footer__container__box__text {
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 400;
+        color: #D1D1D1;
+        font-size: 14px; }
+      .footer__container__box ul {
+        margin-top: 10px;
+        gap: 5px;
+        padding-left: 0; }
+      .footer__container__box h2 {
+        margin: 18px 0;
+        color: #73B800;
+        font-weight: 500;
+        font-size: 20px; }
+      .footer__container__box a {
+        color: #d1d1d1;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 14px;
+        text-decoration: none; }
+        .footer__container__box a:hover {
+          color: #d1d1d1;
+          opacity: 0.8; }
+        .footer__container__box a .bx {
+          font-size: 20px; }
+  .footer__copyright {
+    display: flex;
+    flex-direction: column;
+    background-color: black; }
+    .footer__copyright h3 {
+      color: #7a7a7a;
+      text-align: center;
+      font-weight: 400;
+      padding: 14px 0 0 0;
+      font-size: 16px;
+      margin: 0; }
+    .footer__copyright__desarrollo {
+      padding-bottom: 20px; }
+    .footer__copyright__gonzalo--strong a {
+      color: #7a7a7a;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none; }
+      .footer__copyright__gonzalo--strong a:hover {
+        color: #d1d1d1;
+        opacity: 0.8; }
+
+/* ----------------------------- responsive ----------------------------- */
+@media (max-width: 1179px) {
+  /* ----------------------------- logo + navbar ----------------------------- */
+  .discount__bar {
+    display: none; }
+  /* ----------------------------- index ----------------------------- */
+  .main__section__index {
+    display: flex;
+    flex-direction: column;
+    background-color: #031D5B;
+    height: auto;
+    letter-spacing: 0.2; }
+  .main__section__index__col1 {
+    width: auto;
+    text-align: center;
+    color: #d1d1d1;
+    margin-top: 30px; }
+  .main__section__index__col1 h1 {
+    font-size: 45px;
+    padding-left: 30px; }
+  .main__section__index__col1 h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0 0 30px; }
+  .main__section__index__col1 p {
+    padding: 20px 0 0 30px; }
+  .main__section__index__col2 img {
+    width: 450px;
+    margin: 0 0 30px 0; }
+  /* ----------------------------- contacto ----------------------------- */
+  .main__section__contact {
+    display: flex;
+    flex-direction: column; }
+  .main__section__contact__cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 30px; }
+  /* ----------------------------- proximamente ----------------------------- */
+  .proximamente {
+    min-width: auto;
+    padding: 20px; }
+  .proximamente h1 {
+    font-size: 8vw;
+    margin: 20px 0; }
+  .proximamente h2 {
+    font-size: 4vw;
+    margin: 30px 0; }
+  .proximamente p {
+    font-size: 2vw;
+    margin: 40px 0; }
+  .proximamente button {
+    font-size: 2vw; }
+  /* ----------------------------- footer ----------------------------- */
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; }
+  .footer__container__box {
+    padding: 0;
+    margin-inline: 100px;
+    display: flex;
+    margin-bottom: 30px; }
+  .footer__container__box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 1096px) {
+  /* ----------------------------- logo + navbar ----------------------------- */
+  .collapse ul li {
+    font-size: 14px; }
+  .collapse .btn {
+    margin-inline: 10px;
+    font-weight: 600;
+    padding-inline: 10px;
+    font-size: 14px; }
+  /* ----------------------------- hosting ----------------------------- */
+  .main__section__hosting__cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    padding-bottom: 40px; }
+  .card {
+    margin: 0; }
+  .main__section__hosting__h1 {
+    padding: 30px;
+    font-size: 2rem; }
+  /* ----------------------------- seguridad web ----------------------------- */
+  .main__section__seguridadweb__text p {
+    padding: 50px; } }
+
+@media (max-width: 992px) {
+  /* ----------------------------- logo + navbar ----------------------------- */
+  .collapse ul li {
+    font-size: 16px; }
+  .collapse .btn {
+    font-weight: 600;
+    margin: 8px 0 8px 0;
+    font-size: 15px; }
+  /* ----------------------------- index ----------------------------- */
+  .main__section__index__col2 img {
+    width: 450px;
+    margin: 0 0 30px 0; }
+  /* ----------------------------- hosting ----------------------------- */
+  .main__section__hosting__cards {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    padding-bottom: 40px; }
+  /* ----------------------------- dominios ----------------------------- */
+  .main__section__dominios h2 {
+    padding: 30px 20px; } }
+
+@media (max-width: 803px) {
+  /* ----------------------------- contacto ----------------------------- */
+  .main__section__contact {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  .main__section__contact__cards {
+    grid-template-columns: 1fr;
+    padding-inline: 30px; }
+  /* ----------------------------- proximamente ----------------------------- */
+  .proximamente h2 {
+    font-size: 5vw;
+    margin: 30px 0; }
+  .proximamente p {
+    font-size: 3.5vw;
+    margin: 40px 0; }
+  /* ----------------------------- footer ----------------------------- */
+  .footer__container__box {
+    display: flex;
+    padding: 0;
+    margin-inline: 100px;
+    align-items: center; }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; } }
+
+@media (max-width: 576px) {
+  /* ----------------------------- logo + navbar ----------------------------- */
+  .navbar-brand img {
+    width: 160px;
+    height: 48px; }
+  /* ----------------------------- index ----------------------------- */
+  .main__section__index {
+    padding: 0;
+    text-align: center; }
+  .main__section__index__col1 {
+    width: auto;
+    text-align: center;
+    color: #d1d1d1;
+    margin-top: 30px; }
+  .main__section__index__col1 h1 {
+    font-size: 30px;
+    padding-inline: 20px; }
+  .main__section__index__col1 h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-inline: 20px; }
+  .main__section__index__col1 p {
+    padding-inline: 20px; }
+  .main__section__index__col2 img {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding-inline: 20px; }
+  /* ----------------------------- hosting ----------------------------- */
+  .main__section__hosting__cards {
+    max-width: 280px;
+    padding-inline: 20px; }
+  /* ----------------------------- dominios ----------------------------- */
+  .main__section__dominios h1 {
+    font-size: 2rem;
+    padding-top: 50px; }
+  .main__section__dominios h2 {
+    font-size: 1rem;
+    padding: 10px 20px 15px 20px; }
+  .main__section__dominios__search input[type=text] {
+    font-size: 14px;
+    width: auto; }
+  /* ----------------------------- seguridad web ----------------------------- */
+  .main__section__seguridadweb__text h1 {
+    font-size: 1.5rem;
+    padding: 30px 20px; }
+  .main__section__seguridadweb__text p {
+    font-size: 0.9rem;
+    padding: 0 15px; }
+  .main__section__seguridadweb__img {
+    padding: 10px 20px 10px 20px;
+    width: 100%; }
+  /* ----------------------------- contacto ----------------------------- */
+  .main__section__contact {
+    background-image: url(../assets/images/backgroundcontacto.jpg) center center cover no-repeat fixed; }
+  .main__section__contact__text {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 2px #0b0b0b; }
+  .main__section__contact__text h1 {
+    font-size: 2.2rem;
+    padding: 40px 0 20px 0; }
+  .main__section__contact__text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-inline: 10px;
+    margin-bottom: 30px; }
+  .main__section__contact__card {
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 220px; }
+  .main__section__contact__card a {
+    font-size: 13px; }
+  .main__section__contact__cards h3 {
+    font-size: 18px; }
+  .main__section__contact__cards p {
+    font-size: 14px; }
+  .main__section__contact__card button {
+    margin: 10px 0;
+    padding: 0px 20px 5px 20px;
+    font-size: 14px; }
+  /* ----------------------------- proximamente ----------------------------- */
+  .proximamente h1 {
+    font-size: 12vw;
+    margin: 80px 0 20px 0; }
+  .proximamente h2 {
+    font-size: 7vw;
+    margin: 30px 0; }
+  .proximamente p {
+    font-size: 4vw;
+    margin: 40px 0; }
+  .proximamente button {
+    font-size: 3.5vw; }
+  /* ----------------------------- footer ----------------------------- */
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; } }

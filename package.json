@@ -1,0 +1,22 @@
+{
+  "name": "devhosting",
+  "version": "1.0.0",
+  "description": "Proyecto Dev Hosting",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/stylesass.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalogilparicio/dev-hosting.git"
+  },
+  "author": "Gonzalo Gil Paricio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzalogilparicio/dev-hosting/issues"
+  },
+  "homepage": "https://github.com/gonzalogilparicio/dev-hosting#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
