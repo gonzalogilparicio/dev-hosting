@@ -19,9 +19,9 @@
         <img src="../assets/images/formitasbarradescuento.png" alt="">
     </div>
     <!--  logo + nav -->
-    <header>
-        <nav class="navbar navbar-expand-lg header-nav" style="padding: 0;">
-            <div class="container-fluid px-4" style=" background-color: #ffffff;">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg header-nav header__style">
+            <div class="container-fluid px-4">
                 <div>
                     <a class="navbar-brand" href="../index.html"><img class="logo" alt="Logo" title="Dev Hosting"
                             src="../assets/images/logo.png" /></a>
@@ -62,14 +62,45 @@
     <!-- fin logo + nav -->
 
     <!-- contenido principal -->
-    <main>
-        <section class="main__section__dominios">
-            <h1>Dominios</h1>
+    <main class="main__dominios">
+        <section class="main__dominios__section1">
+            <h1>Registro de Dominio</h1>
             <h2>Encuentra el dominio perfecto y muestra al mundo lo que haces</h2>
-            <form class="main__section__dominios__search" action="proximamente.html">
-                <input type="text" placeholder="Ingrese un dominio" name="search">
-                <button type="submit"><i class='bx bx-search-alt-2'></i></button>
-            </form>
+            <div class="input-group main__dominios__section1__search">
+                <input type="search" class="form-control shadow-none rounded" placeholder="Ingresá un Dominio"
+                    aria-label="Search" aria-describedby="search-addon" />
+                <form action="proximamente.html"><button type="submit">Buscar</button></form>
+            </div>
+        </section>
+        <section class="main__dominios__section2">
+            <h2>Registro &amp; Transferencia de Dominios!</h2>
+            <div class="main__dominios__section2__articles">
+                <article>
+                    <i class='bx bxs-server'></i>
+                    <h3>Hosting de Dominio<span>&nbsp</span></h3>
+                    <p>Registrá tu dominio con Dev Hosting y obtenelo al instante</p>
+                </article>
+                <article>
+                    <i class='bx bx-transfer'></i>
+                    <h3>Transferencia de Dominio</h3>
+                    <p>Rápida y fácil transferencia de tu existente dominio hacia Dev Hosting</p>
+                </article>
+                <article>
+                    <i class='bx bx-cart-download'></i>
+                    <h3>Compra de Dominio<span>&nbsp</span></h3>
+                    <p>Comprá tu nuevo dominio de manera fácil y rápida</p>
+                </article>
+                <article>
+                    <i class='bx bxs-envelope'></i>
+                    <h3>Reenvío de E-mails<span>&nbsp</span></h3>
+                    <p>Reenvío de E-mails para monitorear todo desde una sola casilla</p>
+                </article>
+                <article>
+                    <i class='bx bx-world'></i>
+                    <h3>Sitios Web<span>&nbsp</span></h3>
+                    <p>Conocé las más populares herramientas y soluciones para potenciar tu sitio</p>
+                </article>
+            </div>
         </section>
     </main>
     <!-- fin contenido principal -->

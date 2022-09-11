@@ -1,115 +1,151 @@
 /* ----------------------------- hosting ----------------------------- */
 
 
+.main__hosting {
+  &__section1 {
+    background-image: url(/assets/images/hostingsectionbackground.png);
+    background-size: contain;   
 
-.main__section__hosting {
-    background-image: url(../assets/images/hostingsectionbackground.png);
-    background-size: contain;
+    h1 {
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      font-size: 3rem;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0px auto;
+      text-align: center;      
+
+      li {
+        .bx {
+          color: #31c300;
+        }
+
+        text-align: left;
+        line-height: 20px;
+        font-size: 0.8rem;
+      }
+
+      ul {
+        margin-bottom: 25px;
+      }
+
+      &__card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgb(130, 130, 130), 0 6px 20px 0 rgba(151, 151, 151, 0.948);
+        margin: 50px 0;
+        transition: transform 0.2s linear;
+
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          background-color: #ffa500;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          font-weight: 600;
+          padding: 8px 20px;
+          margin-block: 10px;
+
+          &:hover {
+            background-color: rgb(255, 140, 0);
+            color: black;
+          }
+        }
+
+        &__value--lightblue {
+          background-color: #54A5FF;
+          border-radius: 10px;
+          width: 160px;
+          margin: 0 auto 20px auto;
+        }
+
+        &__value--orange {
+          background-color: #FF6600;
+          border-radius: 10px;
+          width: 160px;
+          margin: 0 auto 20px auto;
+        }
+
+        &__value--lightgreen {
+          background-color: rgb(0, 247, 0);
+          border-radius: 10px;
+          width: 180px;
+          margin: 0 auto 20px auto;
+        }
+
+        &__value__integer__number {
+          font-size: 35px;
+          font-weight: 500;
+        }
+
+        &__value__period {
+          font-size: 12px;
+          margin-left: -25px;
+        }
+
+        &__value__decimal__number {
+          line-height: 1.8;
+          display: inline-block;
+          margin: 4px 0 0 2px;
+          vertical-align: top;
+          font-size: 18px;
+        }
+
+        &__value__currency__symbol {
+          font-size: 36px;
+        }
+
+        &:hover {
+          
+          transform: scale(1.01);
+        }
+      }
+    }
   }
-  
-  .main__section__hosting__h1 {
-    color: white;
+
+  &__section2 {
     text-align: center;
-    padding-top: 50px;
-    font-size: 3rem;
+
+    h2 {
+      font-size: 40px;
+      padding: 70px 50px 30px 50px;
+    }
+
+    p {
+      padding: 0 150px 20px 150px;
+      font-weight: 500;
+      
+      span {
+        display: block;
+      }
+    }
+
+    img {
+      width: 900px;
+    }
   }
-  
-  .main__section__hosting__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0px auto;
-    text-align: center;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgb(130, 130, 130), 0 6px 20px 0 rgba(151, 151, 151, 0.948);
-    margin: 50px 0;
-  }
-  
-  .card h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-  }
-  
-  .main__section__hosting__cards li .bx {
-    color: #31c300;
-  }
-  
-  .main__section__hosting__cards li {
-    text-align: left;
-    line-height: 20px;
-    font-size: 0.8rem;
-  }
-  
-  .main__section__hosting__cards ul {
-    margin-bottom: 25px;
-  }
-  
-  .card__value--lightblue {
-    background-color: #54A5FF;
-    border-radius: 10px;
-    width: 160px;
-    margin: 0 auto 20px auto;
-  }
-  
-  .card__value--orange {
-    background-color: #FF6600;
-    border-radius: 10px;
-    width: 160px;
-    margin: 0 auto 20px auto;
-  }
-  
-  .card__value--lightgreen {
-    background-color: rgb(0, 247, 0);
-    border-radius: 10px;
-    width: 180px;
-    margin: 0 auto 20px auto;
-  }
-  
-  .card__value__integer__number {
-    font-size: 35px;
-    font-weight: 500;
-  }
-  
-  .card__value__period {
-    font-size: 12px;
-    margin-left: -25px;
-  }
-  
-  .card__value__decimal__number {
-    line-height: 1.8;
-    display: inline-block;
-    margin: 4px 0 0 2px;
-    vertical-align: top;
-    font-size: 18px;
-  }
-  
-  .card__value__currency__symbol {
-    font-size: 36px;
-  }
-  
-  .card button {
-    background-color: #ffa500;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-weight: 600;
-    padding: 8px 20px;
-    margin-block: 10px;
-  }
-  
-  .main__section__hosting__cards button:hover {
-    background-color: rgb(255, 140, 0);
-    color: black;
-  }
-  
+}

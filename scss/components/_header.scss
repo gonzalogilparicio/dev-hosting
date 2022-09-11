@@ -33,24 +33,7 @@
   #navbarSupportedContent {
     flex-grow: 0;
   }
-  
-  header {
-    top: 0;
-    position: sticky;
-    z-index: 1;
-  }
-  
-  .navbar-brand img {
-    cursor: pointer;
-    width: 230px;
-    height: 65px;
-    margin-top: 5px;
-  }
-  
-  .nav-link {
-    color: #000000;
-  }
-  
+
   .collapse {
     a {
       &:hover, &.active {
@@ -78,3 +61,28 @@
       }
     }
   }
+  
+  .header {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    padding: 0;
+    
+    &__style {
+      padding: 0;
+      background-color: #ffffff;
+    }
+  }
+  
+  .navbar-brand img {
+    cursor: pointer;
+    width: 230px;
+    height: 65px;
+    margin-top: 5px;
+  }
+  
+  .nav-link {
+    color: #000000;
+  }
+  
+  
