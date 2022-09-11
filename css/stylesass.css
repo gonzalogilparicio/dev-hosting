@@ -120,7 +120,7 @@
 
 /* ----------------------------- hosting ----------------------------- */
 .main__hosting__section1 {
-  background-image: url(/assets/images/hostingsectionbackground.png);
+  background-image: url(../assets/images/hostingsectionbackground.png);
   background-size: contain; }
   .main__hosting__section1 h1 {
     color: white;
@@ -219,7 +219,7 @@
 
 /* ----------------------------- dominios ----------------------------- */
 .main__dominios__section1 {
-  background-image: url(/assets/images/backgrounddominios.jpg);
+  background-image: url(../assets/images/backgrounddominios.jpg);
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat; }
