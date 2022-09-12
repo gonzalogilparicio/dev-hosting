@@ -1,79 +1,110 @@
 /* ----------------------------- contacto ----------------------------- */
 
 
+.main__contact {
 
-.main__section__contact {
+  &__section1 {
     background-image: url(../assets/images/backgroundcontacto.jpg);
-    background-size: contain;
+    background-size: cover;
+
+    &__text {
+      text-align: center;
+      color: white;
+      text-shadow: 5px 5px 2px #0b0b0b;
+
+      h1 {
+        font-size: 4.5rem;
+        padding: 40px 0 20px 0;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0px auto;
+      text-align: center;
+
+      h3 {
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 15px;
+        line-height: 25px;
+      }
+
+      i {
+        font-size: 50px;
+        color: rgb(117, 144, 255);
+        margin-bottom: 15px;
+      }
+
+      &__card {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgb(130, 130, 130), 0 6px 20px 0 rgba(151, 151, 151, 0.948);
+        margin: 50px 0;
+        border: 1px solid black;
+        width: 300px;
+        background-color: rgb(235, 235, 235);
+        transition: transform 0.2s linear;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+
+        span {
+          font-weight: 500;
+          line-height: 40px;
+        }
+
+        button {
+          background: $buttonsOrangeColor;
+          border: none;
+          cursor: pointer;
+          border-radius: 20px;
+          margin: 20px 0;
+          font-weight: 500;
+          padding: 5px 20px 5px 20px;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: rgb(229, 126, 0);
+          }
+        }
+      }
+    }
   }
-  
-  .main__section__contact__text {
-    text-align: center;
-    color: white;
-    text-shadow: 5px 5px 2px #0b0b0b;
+
+  &__section2 {
+    .mapouter {
+      position: relative;
+      text-align: right;
+      width: 100%;
+      height: 400px;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+      height: 400px;
+    }
+
+    .gmap_iframe {
+      height: 400px !important;
+    }
   }
-  
-  .main__section__contact__text h1 {
-    font-size: 4.5rem;
-    padding: 40px 0 20px 0;
-  }
-  
-  .main__section__contact__text h3 {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  
-  .main__section__contact__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0px auto;
-    text-align: center;
-  }
-  
-  .main__section__contact__cards i {
-    font-size: 50px;
-    color: rgb(117, 144, 255);
-    margin-bottom: 15px;
-  }
-  
-  .main__section__contact__card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgb(130, 130, 130), 0 6px 20px 0 rgba(151, 151, 151, 0.948);
-    margin: 50px 0;
-    border: 1px solid black;
-    width: 300px;
-    background-color: rgb(235, 235, 235);
-  }
-  
-  .main__section__contact__cards h3 {
-    font-size: 22px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-  }
-  
-  .main__section__contact__cards p {
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-    line-height: 25px;
-  }
-  
-  .main__section__contact__card button {
-    background: $buttonsOrangeColor;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    margin: 20px 0;
-    font-weight: 500;
-    padding: 5px 20px 5px 20px;
-    transition: all 0.3s;
-  }
-  
-  .main__section__contact__card button:hover {
-    background-color: rgb(229, 126, 0);
-  }
-  
+}

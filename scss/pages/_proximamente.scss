@@ -3,56 +3,55 @@
 
 
 .proximamente {
-    background-image: url(../assets/images/backgroundproximamente3.gif);
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    text-align: center;
-    padding: 100px;
-  }
-  
-  .proximamente h1 {
+  background-image: url(../assets/images/backgroundproximamente3.gif);
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+
+  h1 {
     color: white;
     font-family: quicksand;
     font-size: 7rem;
     margin: 10px 0;
   }
-  
-  .proximamente h2 {
+
+  h2 {
     color: white;
     font-size: 3rem;
     font-weight: 500;
     margin: 20px 0;
   }
-  
-  .proximamente p {
+
+  p {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 300;
     margin: 25px 0;
   }
-  
-  .proximamente button {
+
+  button {
     background: $buttonsOrangeColor;
     border: none;
     cursor: pointer;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     transition: all 0.3s;
+
+    &:hover {
+      background-color: rgb(229, 126, 0);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
   }
-  
-  .proximamente button:hover {
-    background-color: rgb(229, 126, 0);
-    
-  }
-  
-  .proximamente button a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-  }
+}
