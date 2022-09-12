@@ -15,39 +15,43 @@
   /* ----------------------------- index ----------------------------- */
 
 
-  .main__index__section1 {
-    display: flex;
-    flex-direction: column;
-    background-color: #031D5B;
-    height: auto;
-    letter-spacing: 0.2;
+  .main__index {
 
-    &__col1 {
-      width: auto;
-      text-align: center;
-      color: #d1d1d1;
-      margin-top: 30px;
+    &__section1 {
 
-      h1 {
-        font-size: 45px;
-        padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      background-color: #031D5B;
+      height: auto;
+      letter-spacing: 0.2;
+
+      &__col1 {
+        width: auto;
+        text-align: center;
+        color: #d1d1d1;
+        margin-top: 30px;
+
+        h1 {
+          font-size: 45px;
+          padding-left: 30px;
+        }
+
+        h2 {
+          font-size: 20px;
+          font-weight: 400;
+          padding: 20px 0 0 30px;
+        }
+
+        p {
+          padding: 20px 0 0 30px;
+        }
       }
 
-      h2 {
-        font-size: 20px;
-        font-weight: 400;
-        padding: 20px 0 0 30px;
-      }
-
-      p {
-        padding: 20px 0 0 30px;
-      }
-    }
-
-    &__col2 {
-      img {
-        width: 450px;
-        margin: 0 0 30px 0;
+      &__col2 {
+        img {
+          width: 450px;
+          margin: 0 0 30px 0;
+        }
       }
     }
   }
@@ -128,15 +132,17 @@
   /* ----------------------------- logo + navbar ----------------------------- */
 
 
-  .collapse ul li {
-    font-size: 14px;
-  }
+  .collapse {
+    ul li {
+      font-size: 14px;
+    }
 
-  .collapse .btn {
-    margin-inline: 10px;
-    font-weight: 600;
-    padding-inline: 10px;
-    font-size: 14px;
+    .btn {
+      margin-inline: 10px;
+      font-weight: 600;
+      padding-inline: 10px;
+      font-size: 14px;
+    }
   }
 
 
@@ -169,15 +175,28 @@
   }
 
 
-
   /* ----------------------------- seguridad web ----------------------------- */
 
 
-  .main__section__seguridadweb__text p {
-    padding: 50px;
+  .main__seguridadweb {
+
+    &__section2 {
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+
+        &__card {
+          margin: 0;
+          margin-bottom: 40px;
+        }
+      }
+    }
   }
-
-
 }
 
 @media (max-width: 992px) {
@@ -186,24 +205,31 @@
   /* ----------------------------- logo + navbar ----------------------------- */
 
 
-  .collapse ul li {
-    font-size: 16px;
-  }
+  .collapse {
+    ul li {
+      font-size: 16px;
+    }
 
-  .collapse .btn {
-    font-weight: 600;
-    margin: 8px 0 8px 0;
-    font-size: 15px;
+    .btn {
+      font-weight: 600;
+      margin: 8px 0 8px 0;
+      font-size: 15px;
+    }
   }
 
 
   /* ----------------------------- index ----------------------------- */
 
+  .main__index {
 
-  .main__index__section1__col2 {
-    img {
-      width: 450px;
-      margin: 0 0 30px 0;
+    &__section1 {
+
+      &__col2 {
+        img {
+          width: 450px;
+          margin: 0 0 30px 0;
+        }
+      }
     }
   }
 
@@ -211,11 +237,17 @@
   /* ----------------------------- hosting ----------------------------- */
 
 
-  .main__hosting__section1__cards {
-    grid-template-columns: 1fr;
-    max-width: 350px;
-    padding-bottom: 40px;
+  .main__hosting {
+
+    &__section1 {
+      &__cards {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        padding-bottom: 40px;
+      }
+    }
   }
+
 
 
   /* ----------------------------- dominios ----------------------------- */
@@ -248,7 +280,48 @@
 
       &__articles {
         grid-template-columns: repeat(3, 1fr);
-      }      
+      }
+    }
+  }
+
+
+  /* ----------------------------- seguridad web ----------------------------- */
+
+
+  .main__seguridadweb {
+
+    &__section1 {
+
+      &__features {
+        text-align: center;
+
+        span {
+          padding-left: 90px;
+          margin-right: 20px;
+        }
+
+        &__text {
+          padding: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &__section2 {
+
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      &__cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+
+        &__card {
+          margin: 0;
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 }
@@ -273,8 +346,8 @@
     &__section1 {
 
       &__search {
-        align-items: center; 
-        padding: 0;      
+        align-items: center;
+        padding: 0;
 
         input {
           width: 300px !important;
@@ -287,7 +360,30 @@
 
       &__articles {
         grid-template-columns: repeat(2, 1fr);
-      }      
+      }
+    }
+  }
+
+
+  /* ----------------------------- seguridad web ----------------------------- */
+
+
+  .main__seguridadweb {
+
+    &__section1 {
+
+      &__features {
+
+        span {
+          padding-left: 0;
+          padding-right: 10px;
+          margin-right: 0;
+        }
+
+        &__text {
+          padding-inline: 20px;
+        }
+      }
     }
   }
 
@@ -356,38 +452,40 @@
 
   /* ----------------------------- index ----------------------------- */
 
+  .main__index {
 
-  .main__index__section1 {
-    padding: 0;
-    text-align: center;
-
-    &__col1 {
-      width: auto;
+    &__section1 {
+      padding: 0;
       text-align: center;
-      color: #d1d1d1;
-      margin-top: 30px;
 
-      h1 {
-        font-size: 30px;
-        padding-inline: 20px;
+      &__col1 {
+        width: auto;
+        text-align: center;
+        color: #d1d1d1;
+        margin-top: 30px;
+
+        h1 {
+          font-size: 30px;
+          padding-inline: 20px;
+        }
+
+        h2 {
+          font-size: 20px;
+          font-weight: 400;
+          padding-inline: 20px;
+        }
+
+        p {
+          padding-inline: 20px;
+        }
       }
 
-      h2 {
-        font-size: 20px;
-        font-weight: 400;
-        padding-inline: 20px;
-      }
-
-      p {
-        padding-inline: 20px;
-      }
-    }
-
-    &__col2 {
-      img {
-        width: 100%;
-        margin: 0 0 30px 0;
-        padding-inline: 20px;
+      &__col2 {
+        img {
+          width: 100%;
+          margin: 0 0 30px 0;
+          padding-inline: 20px;
+        }
       }
     }
   }
@@ -451,8 +549,8 @@
     &__section1 {
 
       &__search {
-        align-items: center; 
-        padding: 0;      
+        align-items: center;
+        padding: 0;
 
         input {
           width: 200px !important;
@@ -465,7 +563,7 @@
 
       &__articles {
         grid-template-columns: 1fr;
-      }      
+      }
     }
   }
 
@@ -473,20 +571,37 @@
   /* ----------------------------- seguridad web ----------------------------- */
 
 
+  .main__seguridadweb {
 
-  .main__section__seguridadweb__text h1 {
-    font-size: 1.5rem;
-    padding: 30px 20px;
-  }
+    &__section1 {
 
-  .main__section__seguridadweb__text p {
-    font-size: 0.9rem;
-    padding: 0 15px;
-  }
+      &__text {
+        padding-inline: 20px;
 
-  .main__section__seguridadweb__img {
-    padding: 10px 20px 10px 20px;
-    width: 100%;
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__section2 {
+
+      h2 {
+        font-size: 1.5rem;
+        padding-inline: 8px;
+      }
+
+      &__cards {
+
+        &__card {
+          margin-inline: 20px;
+        }
+      }
+    }
   }
 
 

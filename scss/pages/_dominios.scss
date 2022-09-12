@@ -3,11 +3,11 @@
 
 
 .main__dominios {
+  
   &__section1 {
     background-image: url(../assets/images/backgrounddominios.jpg);
     text-align: center;
-    background-size: cover;
-    
+    background-size: cover;    
     background-repeat: no-repeat;
 
     h1 {
@@ -40,18 +40,18 @@
 
       button {
         padding: 8px;
-        background: #ff8c00;
+        background: $buttonsOrangeColor;
         border: none;
         border-radius: 20px !important;
         color: black;
         font-weight: 500;
         width: 100px;     
-        margin-bottom: 40px;   
+        margin-bottom: 40px; 
+        transition: all 0.3s;  
 
         &:hover {
           background-color: rgb(229, 126, 0);
           color: black;
-
         }
       }
     }

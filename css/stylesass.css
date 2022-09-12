@@ -241,13 +241,14 @@
         color: transparent; }
     .main__dominios__section1__search button {
       padding: 8px;
-      background: #ff8c00;
+      background: #ffa500;
       border: none;
       border-radius: 20px !important;
       color: black;
       font-weight: 500;
       width: 100px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      transition: all 0.3s; }
       .main__dominios__section1__search button:hover {
         background-color: #e57e00;
         color: black; }
@@ -278,24 +279,108 @@
     padding-inline: 10px; }
 
 /* ----------------------------- seguridad web ----------------------------- */
-.main__section__seguridadweb {
-  background-color: #2FC99F; }
+.main__seguridadweb__section1 {
+  background-color: #e1e1e1; }
+  .main__seguridadweb__section1__text {
+    justify-content: center;
+    text-align: center;
+    padding-block: 30px; }
+    .main__seguridadweb__section1__text h2 {
+      font-size: 50px;
+      margin-bottom: 20px; }
+    .main__seguridadweb__section1__text p {
+      margin-bottom: 30px; }
+    .main__seguridadweb__section1__text span {
+      font-weight: 600; }
+  .main__seguridadweb__section1__features {
+    padding-bottom: 30px; }
+    .main__seguridadweb__section1__features span {
+      display: inline-block;
+      color: #059400;
+      font-size: 60px;
+      padding-left: 30px; }
+    .main__seguridadweb__section1__features__text {
+      padding-top: 20px;
+      padding-right: 100px; }
 
-.main__section__seguridadweb__text h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 40px 40px 0px 40px; }
-
-.main__section__seguridadweb__text p {
-  font-size: 1rem;
-  text-align: center;
-  padding: 30px 200px 20px 200px; }
-
-.main__section__seguridadweb__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%; }
+.main__seguridadweb__section2 {
+  background-color: #676767; }
+  .main__seguridadweb__section2 h2 {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2rem;
+    font-weight: 400; }
+  .main__seguridadweb__section2__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center; }
+    .main__seguridadweb__section2__cards li {
+      text-align: left;
+      line-height: 20px;
+      font-size: 0.8rem; }
+      .main__seguridadweb__section2__cards li .bx {
+        color: #31c300; }
+    .main__seguridadweb__section2__cards ul {
+      margin-bottom: 25px; }
+    .main__seguridadweb__section2__cards__card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 #828282, 0 6px 20px 0 rgba(151, 151, 151, 0.948);
+      margin: 50px 0;
+      transition: transform 0.2s linear; }
+      .main__seguridadweb__section2__cards__card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px; }
+      .main__seguridadweb__section2__cards__card p {
+        font-size: 1rem; }
+      .main__seguridadweb__section2__cards__card button {
+        background-color: #ffa500;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-weight: 600;
+        padding: 8px 20px;
+        margin-block: 10px; }
+        .main__seguridadweb__section2__cards__card button:hover {
+          background-color: darkorange;
+          color: black; }
+      .main__seguridadweb__section2__cards__card__value--lightblue {
+        background-color: #54A5FF;
+        border-radius: 10px;
+        width: 160px;
+        margin: 0 auto 20px auto; }
+      .main__seguridadweb__section2__cards__card__value--orange {
+        background-color: #FF6600;
+        border-radius: 10px;
+        width: 160px;
+        margin: 0 auto 20px auto; }
+      .main__seguridadweb__section2__cards__card__value--lightgreen {
+        background-color: #00f700;
+        border-radius: 10px;
+        width: 180px;
+        margin: 0 auto 20px auto; }
+      .main__seguridadweb__section2__cards__card__value__integer__number {
+        font-size: 35px;
+        font-weight: 500; }
+      .main__seguridadweb__section2__cards__card__value__period {
+        font-size: 12px;
+        margin-left: -25px; }
+      .main__seguridadweb__section2__cards__card__value__decimal__number {
+        line-height: 1.8;
+        display: inline-block;
+        margin: 4px 0 0 2px;
+        vertical-align: top;
+        font-size: 18px; }
+      .main__seguridadweb__section2__cards__card__value__currency__symbol {
+        font-size: 36px; }
+      .main__seguridadweb__section2__cards__card:hover {
+        transform: scale(1.01); }
 
 /* ----------------------------- contacto ----------------------------- */
 .main__section__contact {
@@ -350,13 +435,14 @@
   line-height: 25px; }
 
 .main__section__contact__card button {
-  background: #ff8c00;
+  background: #ffa500;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   margin: 20px 0;
   font-weight: 500;
-  padding: 5px 20px 5px 20px; }
+  padding: 5px 20px 5px 20px;
+  transition: all 0.3s; }
 
 .main__section__contact__card button:hover {
   background-color: #e57e00; }
@@ -394,16 +480,15 @@
   margin: 25px 0; }
 
 .proximamente button {
-  background: #ff8c00;
+  background: #ffa500;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
-  transition: all 1s; }
+  transition: all 0.3s; }
 
 .proximamente button:hover {
-  background-color: #e57e00;
-  transform: scale(1.2); }
+  background-color: #e57e00; }
 
 .proximamente button a {
   text-decoration: none;
@@ -566,8 +651,14 @@
   .main__hosting__section2 img {
     width: 100%; }
   /* ----------------------------- seguridad web ----------------------------- */
-  .main__section__seguridadweb__text p {
-    padding: 50px; } }
+  .main__seguridadweb__section2 h2 {
+    margin-bottom: 30px; }
+  .main__seguridadweb__section2__cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px; }
+    .main__seguridadweb__section2__cards__card {
+      margin: 0;
+      margin-bottom: 40px; } }
 
 @media (max-width: 992px) {
   /* ----------------------------- logo + navbar ----------------------------- */
@@ -598,7 +689,24 @@
     .main__dominios__section1__search button {
       margin-bottom: 20px; }
   .main__dominios__section2__articles {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  /* ----------------------------- seguridad web ----------------------------- */
+  .main__seguridadweb__section1__features {
+    text-align: center; }
+    .main__seguridadweb__section1__features span {
+      padding-left: 90px;
+      margin-right: 20px; }
+    .main__seguridadweb__section1__features__text {
+      padding: 0;
+      margin-right: 10px; }
+  .main__seguridadweb__section2 h2 {
+    margin-bottom: 40px; }
+  .main__seguridadweb__section2__cards {
+    grid-template-columns: 1fr;
+    max-width: 400px; }
+    .main__seguridadweb__section2__cards__card {
+      margin: 0;
+      margin-bottom: 40px; } }
 
 @media (max-width: 803px) {
   /* ----------------------------- dominios ----------------------------- */
@@ -614,6 +722,13 @@
       margin-bottom: 20px; }
   .main__dominios__section2__articles {
     grid-template-columns: repeat(2, 1fr); }
+  /* ----------------------------- seguridad web ----------------------------- */
+  .main__seguridadweb__section1__features span {
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: 0; }
+  .main__seguridadweb__section1__features__text {
+    padding-inline: 20px; }
   /* ----------------------------- contacto ----------------------------- */
   .main__section__contact {
     background-size: cover;
@@ -701,15 +816,17 @@
   .main__dominios__section2__articles {
     grid-template-columns: 1fr; }
   /* ----------------------------- seguridad web ----------------------------- */
-  .main__section__seguridadweb__text h1 {
+  .main__seguridadweb__section1__text {
+    padding-inline: 20px; }
+    .main__seguridadweb__section1__text h2 {
+      font-size: 24px; }
+    .main__seguridadweb__section1__text p {
+      font-size: 14px; }
+  .main__seguridadweb__section2 h2 {
     font-size: 1.5rem;
-    padding: 30px 20px; }
-  .main__section__seguridadweb__text p {
-    font-size: 0.9rem;
-    padding: 0 15px; }
-  .main__section__seguridadweb__img {
-    padding: 10px 20px 10px 20px;
-    width: 100%; }
+    padding-inline: 8px; }
+  .main__seguridadweb__section2__cards__card {
+    margin-inline: 20px; }
   /* ----------------------------- contacto ----------------------------- */
   .main__section__contact {
     background-image: url(../assets/images/backgroundcontacto.jpg) center center cover no-repeat fixed; }

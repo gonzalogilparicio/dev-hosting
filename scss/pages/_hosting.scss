@@ -2,6 +2,7 @@
 
 
 .main__hosting {
+  
   &__section1 {
     background-image: url(../assets/images/hostingsectionbackground.png);
     background-size: contain;   
@@ -61,7 +62,7 @@
         }
 
         button {
-          background-color: #ffa500;
+          background-color: $buttonsOrangeColor;
           border: none;
           border-radius: 50px;
           cursor: pointer;
