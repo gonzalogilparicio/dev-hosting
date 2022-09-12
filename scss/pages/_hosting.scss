@@ -31,13 +31,13 @@
       text-align: center;      
 
       li {
-        .bx {
-          color: #31c300;
-        }
-
         text-align: left;
         line-height: 20px;
         font-size: 0.8rem;
+
+        i {
+          color: $iconsGreenColor;
+        }        
       }
 
       ul {

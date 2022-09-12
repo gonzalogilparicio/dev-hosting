@@ -44,7 +44,7 @@
 
   &__section2 {
     background-color: #676767;
-      
+
     h2 {
       color: white;
       text-align: center;
@@ -59,16 +59,16 @@
       gap: 40px;
       max-width: 1000px;
       margin: 0px auto;
-      text-align: center;      
+      text-align: center;
 
       li {
-        .bx {
-          color: #31c300;
-        }
-
         text-align: left;
         line-height: 20px;
         font-size: 0.8rem;
+
+        i {
+          color: $iconsGreenColor;
+        }
       }
 
       ul {
@@ -151,7 +151,7 @@
           font-size: 36px;
         }
 
-        &:hover {          
+        &:hover {
           transform: scale(1.01);
         }
       }
