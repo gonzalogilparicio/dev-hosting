@@ -444,20 +444,18 @@
         .main__contact__section1__cards__card button:hover {
           background-color: #e57e00; }
 
-.main__contact__section2 .mapouter {
+.main__contact__section2__mapouter {
   position: relative;
   text-align: right;
   width: 100%;
   height: 400px; }
-
-.main__contact__section2 .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%;
-  height: 400px; }
-
-.main__contact__section2 .gmap_iframe {
-  height: 400px !important; }
+  .main__contact__section2__mapouter__gmap-canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px; }
+    .main__contact__section2__mapouter__gmap-canvas__gmap-iframe {
+      height: 400px !important; }
 
 /* ----------------------------- proximamente ----------------------------- */
 .proximamente {
