@@ -20,3 +20,23 @@
   font-style: normal;
   font-weight: normal;
 }
+
+
+/* ----------------------------- extends ----------------------------- */
+
+.flexProperties {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ----------------------------- mixin ----------------------------- */
+
+@mixin templateGrid ($columns, $gap, $textAlign) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap+px;
+
+  @if ($textAlign == true) {
+    text-align: center;
+  }
+}

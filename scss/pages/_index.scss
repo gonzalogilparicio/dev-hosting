@@ -2,12 +2,11 @@
 
 .main__index {
   &__section1 {
-    display: flex;
-    justify-content: space-between;
+    @extend .flexProperties;
     align-items: center;
     background-color: #031D5B;
     height: 500px;
-    padding: 0 70px;
+    padding: 0 10px;
     letter-spacing: 0.2;
 
     &__col1 {

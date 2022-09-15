@@ -8,8 +8,7 @@
   background-color: $footerBackgroundColor;
 
   &__container {
-    display: flex;
-    justify-content: space-evenly;
+    @extend .flexProperties;
     max-width: 1200px;
     margin-inline: 10px;
     margin-top: 10px;
@@ -92,6 +91,27 @@
       &:hover {
         color: rgb(209, 209, 209);
         opacity: 0.8;
+      }
+    }
+  }
+
+  // map
+
+  $iconSocialMedia: (
+    facebook: #3883f2,
+    twitter:#7ec9ff,
+    linkedin:#00b500,
+    instagram:#ffa90a,
+    github:#faf717,
+  );
+  
+  // bucle
+
+  @each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+    .rs-#{$nameSocialMedia} {
+
+      &:hover {
+        color: $colorIcon;
       }
     }
   }

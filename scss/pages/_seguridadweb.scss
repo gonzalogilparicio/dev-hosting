@@ -54,12 +54,9 @@
     }
 
     &__cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
+      @include templateGrid (3, 40, true);
       max-width: 1000px;
       margin: 0px auto;
-      text-align: center;
 
       li {
         text-align: left;

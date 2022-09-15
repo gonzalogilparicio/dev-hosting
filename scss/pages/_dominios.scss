@@ -65,10 +65,7 @@
     }
 
     &__articles {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-      text-align: center;
+      @include templateGrid (5, 20, true);      
       margin-inline: 50px;
       margin-bottom: 30px;
 
