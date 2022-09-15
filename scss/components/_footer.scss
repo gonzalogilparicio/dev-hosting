@@ -97,7 +97,7 @@
 
   // map
 
-  $iconSocialMedia: (
+  $socialMediaLinks: (
     facebook: #3883f2,
     twitter:#7ec9ff,
     linkedin:#00b500,
@@ -107,7 +107,7 @@
   
   // bucle
 
-  @each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+  @each $nameSocialMedia, $colorIcon in $socialMediaLinks {
     .rs-#{$nameSocialMedia} {
 
       &:hover {
