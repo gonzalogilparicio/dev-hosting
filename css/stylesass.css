@@ -288,7 +288,7 @@
     justify-content: center;
     text-align: center;
     padding-block: 30px; }
-    .main__seguridadweb__section1__text h2 {
+    .main__seguridadweb__section1__text h1 {
       font-size: 50px;
       margin-bottom: 20px; }
     .main__seguridadweb__section1__text p {
@@ -565,15 +565,15 @@
       .footer__copyright__gonzalo--strong a:hover {
         color: #d1d1d1;
         opacity: 0.8; }
-  .footer .rs-facebook:hover {
+  .footer .rs-facebook:hover > i {
     color: #3883f2; }
-  .footer .rs-twitter:hover {
+  .footer .rs-twitter:hover > i {
     color: #7ec9ff; }
-  .footer .rs-linkedin:hover {
+  .footer .rs-linkedin:hover > i {
     color: #00b500; }
-  .footer .rs-instagram:hover {
+  .footer .rs-instagram:hover > i {
     color: #ffa90a; }
-  .footer .rs-github:hover {
+  .footer .rs-github:hover > i {
     color: #faf717; }
 
 /* ----------------------------- responsive ----------------------------- */
@@ -833,7 +833,7 @@
   /* ----------------------------- seguridad web ----------------------------- */
   .main__seguridadweb__section1__text {
     padding-inline: 20px; }
-    .main__seguridadweb__section1__text h2 {
+    .main__seguridadweb__section1__text h1 {
       font-size: 24px; }
     .main__seguridadweb__section1__text p {
       font-size: 14px; }

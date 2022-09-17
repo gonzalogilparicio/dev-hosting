@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gonzalogilparicio.github.io/dev-hosting/sitemap.xml

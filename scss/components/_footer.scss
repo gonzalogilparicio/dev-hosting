@@ -110,7 +110,7 @@
   @each $nameSocialMedia, $colorIcon in $socialMediaLinks {
     .rs-#{$nameSocialMedia} {
 
-      &:hover {
+      &:hover > i {
         color: $colorIcon;
       }
     }
