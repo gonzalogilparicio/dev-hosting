@@ -246,6 +246,13 @@
         }
       }
     }
+
+    &__section3 {
+
+      &__accordion {
+        margin-inline: 160px;
+      }
+    }
   }
 
 
@@ -344,6 +351,18 @@
 
 @media (max-width: 803px) {
 
+
+  /* ----------------------------- index ----------------------------- */
+
+  .main__index {
+
+    &__section3 {
+
+      &__accordion {
+        margin-inline: 70px;
+      }
+    }
+  }
 
   /* ----------------------------- dominios ----------------------------- */
 
@@ -501,6 +520,31 @@
         }
       }
     }
+
+    &__section3 {
+
+      &__h2 {
+        font-size: 22px;
+      }
+
+      &__accordion {
+        margin-inline: 20px;
+
+        &__item {
+
+          &__body {
+            font-size: 12px;
+          }
+        }
+
+        h2 {
+
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 
 
@@ -541,6 +585,13 @@
 
       img {
         padding-bottom: 20px;
+      }
+    }
+
+    &__section3 {
+
+      &__container {
+        padding: 30px;
       }
     }
   }

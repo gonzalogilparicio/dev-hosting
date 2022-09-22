@@ -121,6 +121,21 @@
 .main__index__section2 h4 {
   font-weight: 400; }
 
+.main__index__section3 {
+  background-color: #eeeeee; }
+  .main__index__section3__h2 {
+    padding-block: 50px; }
+  .main__index__section3__accordion {
+    margin-inline: 300px;
+    padding-bottom: 50px; }
+    .main__index__section3__accordion__item {
+      position: relative;
+      z-index: 0; }
+    .main__index__section3__accordion h2 button {
+      font-weight: 600; }
+    .main__index__section3__accordion span {
+      display: block; }
+
 /* ----------------------------- hosting ----------------------------- */
 .main__hosting__section1 {
   background-image: url(../assets/images/hostingsectionbackground.png);
@@ -219,6 +234,18 @@
       display: block; }
   .main__hosting__section2 img {
     width: 900px; }
+
+.main__hosting__section3 {
+  background-color: #673DE4; }
+  .main__hosting__section3 h4 {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-block: 20px; }
+  .main__hosting__section3 p {
+    color: white; }
+  .main__hosting__section3__container {
+    padding: 80px; }
 
 /* ----------------------------- dominios ----------------------------- */
 .main__dominios__section1 {
@@ -692,6 +719,8 @@
   .main__index__section1__col2 img {
     width: 450px;
     margin: 0 0 30px 0; }
+  .main__index__section3__accordion {
+    margin-inline: 160px; }
   /* ----------------------------- hosting ----------------------------- */
   .main__hosting__section1__cards {
     grid-template-columns: 1fr;
@@ -729,6 +758,9 @@
       margin-bottom: 40px; } }
 
 @media (max-width: 803px) {
+  /* ----------------------------- index ----------------------------- */
+  .main__index__section3__accordion {
+    margin-inline: 70px; }
   /* ----------------------------- dominios ----------------------------- */
   .main__dominios h1 {
     font-size: 40px; }
@@ -798,6 +830,14 @@
       width: 100%;
       margin: 0 0 30px 0;
       padding-inline: 20px; }
+  .main__index__section3__h2 {
+    font-size: 22px; }
+  .main__index__section3__accordion {
+    margin-inline: 20px; }
+    .main__index__section3__accordion__item__body {
+      font-size: 12px; }
+    .main__index__section3__accordion h2 button {
+      font-size: 12px; }
   /* ----------------------------- hosting ----------------------------- */
   .main__hosting__section1 h1 {
     padding-top: 30px;
@@ -817,6 +857,8 @@
     padding-inline: 20px; }
   .main__hosting__section2 img {
     padding-bottom: 20px; }
+  .main__hosting__section3__container {
+    padding: 30px; }
   /* ----------------------------- dominios ----------------------------- */
   .main__dominios h1 {
     font-size: 40px; }
