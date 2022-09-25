@@ -396,6 +396,24 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
+
+    &__section3 {
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      &__accordion {
+        margin: 0 20x 40px 20px;
+
+        &__item {
+
+          h2 {
+            padding: 5px
+          }
+        }
+      }
+    }
   }
 
 
@@ -627,6 +645,34 @@
 
       &__articles {
         grid-template-columns: 1fr;
+      }
+    }
+
+    &__section3 {
+
+      h3 {
+        font-size: 0.8rem;
+      }
+
+      &__accordion {
+        margin-inline: 20px;
+
+        h2 {
+          button {
+            font-size: 12px;
+          }
+        }
+
+        &__item {
+
+          span {
+            font-size: 12px;
+          }
+
+          &__body {
+            font-size: 12px;
+          }
+        }
       }
     }
   }
