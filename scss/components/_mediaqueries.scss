@@ -63,6 +63,8 @@
   .main__contact {
 
     &__section1 {
+      background-image: none;
+      background-color: rgb(31, 31, 31);
       display: flex;
       flex-direction: column;
       background-size: contain;

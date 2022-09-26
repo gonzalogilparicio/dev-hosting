@@ -400,6 +400,10 @@
         .main__seguridadweb__section2__cards__card button:hover {
           background-color: darkorange;
           color: black; }
+      .main__seguridadweb__section2__cards__card__ssldominio {
+        display: block; }
+      .main__seguridadweb__section2__cards__card__sslorganizacional {
+        display: block; }
       .main__seguridadweb__section2__cards__card__value--lightblue {
         background-color: #54A5FF;
         border-radius: 10px;
@@ -454,7 +458,8 @@
 /* ----------------------------- contacto ----------------------------- */
 .main__contact__section1 {
   background-image: url(../assets/images/backgroundcontacto.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
   .main__contact__section1__text {
     text-align: center;
     color: white;
@@ -695,6 +700,8 @@
       margin: 0 0 30px 0; }
   /* ----------------------------- contacto ----------------------------- */
   .main__contact__section1 {
+    background-image: none;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     background-size: contain; }

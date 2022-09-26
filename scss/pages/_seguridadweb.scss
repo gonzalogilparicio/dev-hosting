@@ -105,6 +105,14 @@
           }
         }
 
+        &__ssldominio {
+          display: block;
+        }
+
+        &__sslorganizacional {
+          display: block;
+        }
+
         &__value--lightblue {
           background-color: #54A5FF;
           border-radius: 10px;
