@@ -24,7 +24,7 @@
     }
 
     &__cards {
-      @include templateGrid (3, 40, true);      
+      @include templateGrid (3, 40, true);
       max-width: 1000px;
       margin: 0px auto;
 
@@ -86,6 +86,41 @@
   }
 
   &__section2 {
+
+    h2 {
+      padding: 40px 150px 20px 150px;
+    }
+
+    &__form {
+      margin-inline: 400px;
+
+      label {
+        font-weight: 600;
+        padding: 20px 0 10px 0;
+      }
+
+      textarea {
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-bottom: 50px;
+        background: $buttonsOrangeColor;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 5px 20px 5px 20px;
+        transition: all 0.3s;
+        font-weight: 500;
+
+        &:hover {
+          background-color: rgb(229, 126, 0);
+        }
+      }
+    }
+  }
+
+  &__section3 {
 
     &__mapouter {
       position: relative;

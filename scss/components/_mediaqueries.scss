@@ -212,6 +212,23 @@
       }
     }
   }
+
+
+  /* ----------------------------- contacto ----------------------------- */
+
+  .main__contact {
+
+    &__section2 {
+
+      h2 {
+        padding-inline: 20px;
+      }
+
+      &__form {
+        margin-inline: 100px;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -811,6 +828,18 @@
             font-size: 14px;
           }
         }
+      }
+    }
+
+    &__section2 {
+
+      h2 {
+        padding-inline: 10px;
+        font-size: 16px;
+      }
+
+      &__form {
+        margin-inline: 12px;
       }
     }
   }
