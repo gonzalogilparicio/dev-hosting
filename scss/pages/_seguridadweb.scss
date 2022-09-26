@@ -154,4 +154,35 @@
       }
     }
   }
+
+  &__section3 {
+
+    &__h2 {
+      font-size: 3rem;
+      padding-block: 30px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 30px;
+    }
+
+    &__accordion {
+      margin: 0 100px 40px 100px;
+
+      span {
+        display: block;
+      }
+
+      button {
+        font-weight: 600;
+        color: black !important;
+      }
+
+      &__item {
+        position: relative;
+        z-index: 0;
+      }
+    }
+  }
 }

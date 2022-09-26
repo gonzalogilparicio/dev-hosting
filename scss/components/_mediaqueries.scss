@@ -437,6 +437,24 @@
         }
       }
     }
+
+    &__section3 {
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      &__accordion {
+        margin: 0 20x 40px 20px;
+
+        &__item {
+
+          h2 {
+            padding: 5px
+          }
+        }
+      }
+    }
   }
 
 
@@ -650,27 +668,31 @@
 
     &__section3 {
 
+      h2 {
+        font-size: 1.5rem;
+        padding-top: 50px;
+      }
+
       h3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       &__accordion {
         margin-inline: 20px;
+        padding: 0;
 
         h2 {
+          padding-top: 0;
+
           button {
-            font-size: 12px;
+            font-size: 16px;
           }
         }
 
         &__item {
 
           span {
-            font-size: 12px;
-          }
-
-          &__body {
-            font-size: 12px;
+            font-size: 16px;
           }
         }
       }
@@ -709,6 +731,38 @@
 
         &__card {
           margin-inline: 20px;
+        }
+      }
+    }
+
+    &__section3 {
+
+      h2 {
+        font-size: 1.5rem;
+        padding-top: 50px;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      &__accordion {
+        margin-inline: 20px;
+        padding: 0;
+
+        h2 {
+          padding-top: 0;
+
+          button {
+            font-size: 16px;
+          }
+        }
+
+        &__item {
+
+          span {
+            font-size: 16px;
+          }
         }
       }
     }

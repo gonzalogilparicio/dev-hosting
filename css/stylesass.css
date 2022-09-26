@@ -432,6 +432,25 @@
       .main__seguridadweb__section2__cards__card:hover {
         transform: scale(1.01); }
 
+.main__seguridadweb__section3__h2 {
+  font-size: 3rem;
+  padding-block: 30px; }
+
+.main__seguridadweb__section3 h3 {
+  font-size: 1.5rem;
+  padding-bottom: 30px; }
+
+.main__seguridadweb__section3__accordion {
+  margin: 0 100px 40px 100px; }
+  .main__seguridadweb__section3__accordion span {
+    display: block; }
+  .main__seguridadweb__section3__accordion button {
+    font-weight: 600;
+    color: black !important; }
+  .main__seguridadweb__section3__accordion__item {
+    position: relative;
+    z-index: 0; }
+
 /* ----------------------------- contacto ----------------------------- */
 .main__contact__section1 {
   background-image: url(../assets/images/backgroundcontacto.jpg);
@@ -807,6 +826,12 @@
     margin-right: 0; }
   .main__seguridadweb__section1__features__text {
     padding-inline: 20px; }
+  .main__seguridadweb__section3 h2 {
+    font-size: 2rem; }
+  .main__seguridadweb__section3__accordion {
+    margin: 0 20x 40px 20px; }
+    .main__seguridadweb__section3__accordion__item h2 {
+      padding: 5px; }
   /* ----------------------------- contacto ----------------------------- */
   .main__contact__section1__cards {
     grid-template-columns: 1fr;
@@ -898,16 +923,20 @@
       margin-right: 0; }
   .main__dominios__section2__articles {
     grid-template-columns: 1fr; }
+  .main__dominios__section3 h2 {
+    font-size: 1.5rem;
+    padding-top: 50px; }
   .main__dominios__section3 h3 {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .main__dominios__section3__accordion {
-    margin-inline: 20px; }
-    .main__dominios__section3__accordion h2 button {
-      font-size: 12px; }
+    margin-inline: 20px;
+    padding: 0; }
+    .main__dominios__section3__accordion h2 {
+      padding-top: 0; }
+      .main__dominios__section3__accordion h2 button {
+        font-size: 16px; }
     .main__dominios__section3__accordion__item span {
-      font-size: 12px; }
-    .main__dominios__section3__accordion__item__body {
-      font-size: 12px; }
+      font-size: 16px; }
   /* ----------------------------- seguridad web ----------------------------- */
   .main__seguridadweb__section1__text {
     padding-inline: 20px; }
@@ -920,6 +949,20 @@
     padding-inline: 8px; }
   .main__seguridadweb__section2__cards__card {
     margin-inline: 20px; }
+  .main__seguridadweb__section3 h2 {
+    font-size: 1.5rem;
+    padding-top: 50px; }
+  .main__seguridadweb__section3 h3 {
+    font-size: 1rem; }
+  .main__seguridadweb__section3__accordion {
+    margin-inline: 20px;
+    padding: 0; }
+    .main__seguridadweb__section3__accordion h2 {
+      padding-top: 0; }
+      .main__seguridadweb__section3__accordion h2 button {
+        font-size: 16px; }
+    .main__seguridadweb__section3__accordion__item span {
+      font-size: 16px; }
   /* ----------------------------- contacto ----------------------------- */
   .main__contact__section1 {
     background-image: url(../assets/images/backgroundcontacto.jpg) center center cover no-repeat fixed; }
