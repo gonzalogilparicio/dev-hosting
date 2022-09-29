@@ -273,7 +273,7 @@
       padding: 8px;
       background: #ffa500;
       border: none;
-      border-radius: 20px !important;
+      border-radius: 20px;
       color: black;
       font-weight: 500;
       width: 100px;
@@ -546,11 +546,11 @@
   height: 400px; }
   .main__contact__section3__mapouter__gmap-canvas {
     overflow: hidden;
-    background: none !important;
+    background: none;
     width: 100%;
     height: 400px; }
     .main__contact__section3__mapouter__gmap-canvas__gmap-iframe {
-      height: 400px !important; }
+      height: 400px; }
 
 /* ----------------------------- proximamente ----------------------------- */
 .proximamente {
