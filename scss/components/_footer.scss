@@ -9,7 +9,6 @@
 
   &__container {
     @extend .flexProperties;
-    max-width: 1200px;
     margin-inline: 10px;
     margin-top: 10px;
 
@@ -97,20 +96,20 @@
 
   // map
 
-  $socialMediaLinks: (
-    facebook: #3883f2,
+  $socialMediaLinks: (facebook: #3883f2,
     twitter:#7ec9ff,
     linkedin:#00b500,
     instagram:#ffa90a,
     github:#faf717,
   );
-  
+
   // bucle
 
-  @each $nameSocialMedia, $colorIcon in $socialMediaLinks {
+  @each $nameSocialMedia,
+  $colorIcon in $socialMediaLinks {
     .rs-#{$nameSocialMedia} {
 
-      &:hover > i {
+      &:hover>i {
         color: $colorIcon;
       }
     }

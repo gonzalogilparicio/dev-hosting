@@ -13,6 +13,7 @@
       width: 550px;
       color: #d1d1d1;
       margin-bottom: 0px;
+      text-align: center;
 
       h1 {
         font-size: 45px;
@@ -59,14 +60,14 @@
   }
 
   &__section3 {
-    
+
     &__h2 {
       padding-block: 50px;
     }
 
     background-color: rgb(238, 238, 238);
 
-    &__accordion {      
+    &__accordion {
       margin-inline: 300px;
       padding-bottom: 50px;
 
@@ -75,10 +76,10 @@
         z-index: 0;
       }
 
-      h2 {       
-        
+      h2 {
+
         button {
-          font-weight: 600;          
+          font-weight: 600;
         }
       }
 

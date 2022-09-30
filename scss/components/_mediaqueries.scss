@@ -1,6 +1,100 @@
 /* ----------------------------- responsive ----------------------------- */
 
 
+@media (max-width: 2330px) {
+
+  /* ----------------------------- dominios ----------------------------- */
+
+  .main__dominios {
+
+    &__section1 {
+
+      &__search {
+        padding-inline: 800px;
+      }
+    }
+  }
+
+
+  /* ----------------------------- contacto ----------------------------- */
+
+
+  .main__contact {
+
+    &__section2 {
+
+      &__form {
+        margin-inline: 800px;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1944px) {
+
+  /* ----------------------------- dominios ----------------------------- */
+
+  .main__dominios {
+
+    &__section1 {
+
+      &__search {
+        padding-inline: 600px;
+      }
+    }
+  }
+
+
+  /* ----------------------------- contacto ----------------------------- */
+
+
+  .main__contact {
+
+    &__section2 {
+
+      &__form {
+        margin-inline: 600px;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1562px) {
+
+  /* ----------------------------- dominios ----------------------------- */
+
+  .main__dominios {
+
+    &__section1 {
+
+      &__search {
+        padding-inline: 400px;
+      }
+    }
+  }
+
+  /* ----------------------------- contacto ----------------------------- */
+
+
+  .main__contact {
+
+    &__section2 {
+
+      &__form {
+        margin-inline: 400px;
+      }
+    }
+  }
+
+}
+
+
+
+
 @media (max-width: 1179px) {
 
 
@@ -52,6 +146,19 @@
           width: 450px;
           margin: 0 0 30px 0;
         }
+      }
+    }
+  }
+
+
+  /* ----------------------------- dominios ----------------------------- */
+
+  .main__dominios {
+
+    &__section1 {
+
+      &__search {
+        padding-inline: 300px;
       }
     }
   }
