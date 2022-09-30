@@ -111,9 +111,9 @@
         display: block;
       }
 
-      button {
+      .accordion-button {
         font-weight: 600;
-        color: black !important;
+        color: black;
       }
 
       &__item {

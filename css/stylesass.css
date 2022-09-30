@@ -321,9 +321,9 @@
   margin: 0 100px 40px 100px; }
   .main__dominios__section3__accordion span {
     display: block; }
-  .main__dominios__section3__accordion button {
+  .main__dominios__section3__accordion .accordion-button {
     font-weight: 600;
-    color: black !important; }
+    color: black; }
   .main__dominios__section3__accordion__item {
     position: relative;
     z-index: 0; }
@@ -448,9 +448,9 @@
   margin: 0 100px 40px 100px; }
   .main__seguridadweb__section3__accordion span {
     display: block; }
-  .main__seguridadweb__section3__accordion button {
+  .main__seguridadweb__section3__accordion .accordion-button {
     font-weight: 600;
-    color: black !important; }
+    color: black; }
   .main__seguridadweb__section3__accordion__item {
     position: relative;
     z-index: 0; }
@@ -805,8 +805,8 @@
   .main__dominios__section1__search {
     display: flex;
     flex-direction: column; }
-    .main__dominios__section1__search input {
-      width: 100% !important;
+    .main__dominios__section1__search .form-control {
+      width: 100%;
       margin-bottom: 20px; }
     .main__dominios__section1__search button {
       margin-bottom: 20px; }
@@ -842,8 +842,8 @@
   .main__dominios__section1__search {
     align-items: center;
     padding: 0; }
-    .main__dominios__section1__search input {
-      width: 300px !important;
+    .main__dominios__section1__search .form-control {
+      width: 300px;
       margin-bottom: 20px; }
   .main__dominios__section2__articles {
     grid-template-columns: repeat(2, 1fr); }
@@ -952,8 +952,8 @@
   .main__dominios__section1__search {
     align-items: center;
     padding: 0; }
-    .main__dominios__section1__search input {
-      width: 200px !important;
+    .main__dominios__section1__search .form-control {
+      width: 200px;
       margin-right: 0; }
   .main__dominios__section2__articles {
     grid-template-columns: 1fr; }
